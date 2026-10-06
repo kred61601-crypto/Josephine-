@@ -4,50 +4,87 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>For My Josephine ❤️</title>
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Poppins',sans-serif;background:#fff5f7;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px}
-.card{max-width:520px;width:100%;background:#fff;border-radius:28px;padding:38px 26px;box-shadow:0 20px 50px rgba(230,80,120,0.15);text-align:center;border:1px solid #ffe1ea}
-h1{font-family:'Great Vibes',cursive;font-size:64px;color:#e03a6b;line-height:1}
-.sub{letter-spacing:4px;font-size:10px;color:#c49aa5;margin:10px 0 24px;text-transform:uppercase}
-.hearts{font-size:28px;margin:10px 0;animation:beat 1.2s infinite}
-@keyframes beat{0%,100%{transform:scale(1)}50%{transform:scale(1.15)}}
-p{font-size:15.5px;line-height:1.9;color:#5a3a44;font-weight:300;margin-bottom:16px;text-align:center}
-.pink{color:#e03a6b;font-weight:500}
-.btn{background:#e03a6b;color:#fff;border:none;padding:14px 30px;border-radius:50px;font-size:14px;margin-top:10px;cursor:pointer}
-.hidden{display:none;margin-top:20px;font-family:'Great Vibes',cursive;font-size:32px;color:#e03a6b}
-.foot{margin-top:30px;font-size:10px;color:#c49aa5;letter-spacing:2px}
+body{font-family:'Poppins',sans-serif;background:#fff5f7;min-height:100vh}
+.hero{max-width:520px;margin:0 auto;padding:25px 20px}
+.card{background:#fff;border-radius:30px;padding:32px 22px;box-shadow:0 20px 60px rgba(224,58,107,0.18);text-align:center;border:1px solid #ffe1ea}
+h1{font-family:'Great Vibes',cursive;font-size:62px;color:#e03a6b}
+.sub{letter-spacing:4px;font-size:10px;color:#c49aa5;margin-bottom:18px;text-transform:uppercase}
+.jj{font-family:'Great Vibes',cursive;font-size:58px;color:#e03a6b;animation:beat 1.3s infinite;display:flex;align-items:center;justify-content:center;gap:12px}
+@keyframes beat{0%,100%{transform:scale(1)}50%{transform:scale(1.1)}}
+.jj span{font-size:42px}
+p{font-size:15px;line-height:1.85;color:#5a3a44;font-weight:300;margin-bottom:14px}
+.pink{color:#e03a6b;font-weight:600}
+.btn{width:100%;background:#e03a6b;color:#fff;border:none;padding:15px;border-radius:50px;font-weight:500;margin-top:14px;cursor:pointer;font-size:14px;box-shadow:0 8px 20px rgba(224,58,107,0.3)}
+.btn2{background:#fff;color:#e03a6b;border:1.5px solid #ffccd9}
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:18px 0}
+.gallery div{height:140px;border-radius:18px;background:linear-gradient(135deg,#ffc2d1,#ff8fab);display:flex;align-items:center;justify-content:center;color:#fff;font-size:13px;overflow:hidden;background-size:cover;background-position:center}
+#secret{position:fixed;inset:0;background:rgba(0,0,0,0.6);display:none;align-items:center;justify-content:center;padding:20px;z-index:10}
+.secret-box{background:#fff;border-radius:24px;padding:30px 22px;max-width:400px;text-align:center}
+.music-note{position:fixed;bottom:20px;right:20px;background:#fff;width:46px;height:46px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(0,0,0,0.15);cursor:pointer;font-size:20px}
+.foot{margin-top:22px;font-size:10px;color:#c49aa5;letter-spacing:2px}
+#overlay{position:fixed;inset:0;background:#fff5f7;display:flex;align-items:center;justify-content:center;z-index:20;flex-direction:column;gap:14px}
 </style>
 </head>
 <body>
+
+<div id="overlay">
+<div style="font-family:'Great Vibes',cursive;font-size:52px;color:#e03a6b">For Josephine</div>
+<p style="text-align:center">I made something special for you ❤️</p>
+<button class="btn" style="width:auto;padding:14px 36px" onclick="startLove()">Tap to Open 💌</button>
+</div>
+
+<div class="hero">
 <div class="card">
 <h1>Josephine</h1>
-<div class="sub">My favorite person</div>
-<div class="hearts">💗</div>
-<p>
-My love,
-</p>
-<p>
-Distance means nothing when you are in my heart. 
-From the moment I wake up to the moment I sleep, it's you.
-</p>
-<p>
-You are my <span class="pink">peace, my joy, my everything</span>. 
-Your smile is my favorite view, your voice is my favorite sound.
-</p>
-<p>
-I may not be there to hold your hand right now, but I am holding you in my heart, every single second.
-</p>
-<p>
-I love you more than words can ever show. More than yesterday, but less than tomorrow.
-</p>
-<p><b>Forever yours ❤️</b></p>
+<div class="sub">My Favorite Person — Always</div>
+<div class="jj"><span>J</span> & <span>J</span> <span>❤️</span></div>
 
-<button class="btn" onclick="document.getElementById('msg').style.display='block';this.style.display='none'">A message for you 💌</button>
-<div id="msg" class="hidden">You are my always, Josephine. I love you endlessly.</div>
+<p>Distance means nothing when you are in my heart.</p>
+<p>You are my <span class="pink">peace, my joy, my everything</span>. Your smile is my favorite view.</p>
 
-<div class="foot">MADE WITH LOVE — 2026</div>
+<div class="gallery">
+<div style="background-image:url('https://images.unsplash.com/photo-1529634597503-139d3726fed5')">Photo 1</div>
+<div style="background-image:url('https://images.unsplash.com/photo-1516589177381-225540ac2a81')">Photo 2</div>
+<div style="background-image:url('https://images.unsplash.com/photo-1522673607200-164d1b6ce486')">Photo 3</div>
+<div style="background-image:url('https://images.unsplash.com/photo-1518199266791-5375a83190b7')">Photo 4</div>
 </div>
+<p style="font-size:12px;color:#c49aa5">Replace these with your photos — just change the image links in code</p>
+
+<button class="btn" onclick="document.getElementById('secret').style.display='flex'">Open My Secret Letter 💌</button>
+<button class="btn btn2" onclick="toggleMusic()">🎵 Play / Pause Our Song</button>
+
+<div class="foot">MADE WITH ALL MY LOVE — 2026<br>josephine-1-uxcp.onrender.com</div>
+</div>
+</div>
+
+<div id="secret" onclick="this.style.display='none'">
+<div class="secret-box" onclick="event.stopPropagation()">
+<div style="font-family:'Great Vibes',cursive;font-size:42px;color:#e03a6b;margin-bottom:10px">My Wifey,</div>
+<p>If I could, I would cross the distance right now just to hug you. You are my always. I love you more than yesterday, but less than tomorrow.</p>
+<p>From Eldoret to Saudi Arabia — it's still us. Always us.</p>
+<p><b>Forever yours ❤️</b></p>
+<button class="btn" onclick="document.getElementById('secret').style.display='none'">Close ❤️</button>
+</div>
+</div>
+
+<div class="music-note" onclick="toggleMusic()">🎵</div>
+<audio id="music" loop>
+<source src="https://cdn.pixabay.com/download/audio/2022/03/10/audio_4a8d3f2c20.mp3?filename=romantic-love-piano-110847.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+let playing=false;
+function startLove(){
+document.getElementById('overlay').style.display='none';
+let m=document.getElementById('music'); m.volume=0.8; m.play(); playing=true;
+}
+function toggleMusic(){
+let m=document.getElementById('music');
+if(playing){m.pause();playing=false}else{m.play();playing=true}
+}
+</script>
 </body>
-</html>
+  </html>
