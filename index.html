@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Josephine ❤️</title>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Poppins',sans-serif;background:#fff7f9;color:#4a2a33;overflow-x:hidden}
+.hearts{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:0}
+.heart{position:absolute;animation:float 6s infinite ease-in;color:#ff7a9e;opacity:0.6}
+@keyframes float{0%{transform:translateY(100vh) scale(0.5);opacity:0}50%{opacity:0.8}100%{transform:translateY(-10vh) scale(1.2);opacity:0}}
+.container{position:relative;z-index:1;max-width:700px;margin:0 auto;padding:20px}
+.card{background:white;border-radius:28px;padding:36px 28px;margin:30px 10px;box-shadow:0 20px 50px rgba(255,122,158,0.15);text-align:center;border:1px solid #ffe3ea}
+h1{font-family:'Great Vibes',cursive;font-size:54px;color:#d93d6b;margin-bottom:10px}
+.subtitle{letter-spacing:3px;text-transform:uppercase;font-size:11px;color:#c48a9a;margin-bottom:25px}
+.message{text-align:left;line-height:1.9;font-size:15.5px;font-weight:300}
+.message p{margin-bottom:18px}
+.highlight{background:#fff0f4;padding:2px 8px;border-radius:8px;font-weight:500;color:#d93d6b}
+.photo-frame{width:100%;height:340px;border-radius:22px;background:linear-gradient(135deg,#ffd6e0,#ff9ab5);display:flex;align-items:center;justify-content:center;margin:25px 0}
+.photo-frame span{font-family:'Great Vibes',cursive;font-size:42px;color:white}
+.divider{margin:28px 0;text-align:center;color:#ffb3c6;letter-spacing:8px}
+.btn{display:inline-block;background:#d93d6b;color:white;padding:14px 32px;border-radius:50px;text-decoration:none;font-weight:500;margin-top:20px}
+.footer{margin-top:30px;font-size:12px;color:#c48a9a}
+</style>
+</head>
+<body>
+<div class="hearts" id="hearts"></div>
+<div class="container"><div class="card">
+<h1>Josephine</h1>
+<div class="subtitle">From Eldoret to Dubai — Still Us</div>
+<div class="photo-frame"><span>J & J ❤️</span></div>
+<div class="message">
+<p>Hi my love,</p>
+<p>I made this small space for you because sometimes WhatsApp messages are not enough.</p>
+<p>I keep thinking about how we started — from that <span class="highlight">single room, from nothing, from 50 bob</span>. You never left.</p>
+<p>Now you are in Dubai working so hard, and I am here in Eldoret fighting for us too. Those <span class="highlight">10-hour calls</span> are my favorite part of my day.</p>
+<p>Josephine, I know sometimes I ask for bundles and I feel so guilty. It's not because I want to use you. It's because <span class="highlight">you are the only person I can run to</span>.</p>
+<p>I am not perfect, but my love for you is real. From a single room to wherever God takes us — I want it to be you.</p>
+<p><b>Yours,<br>Your man in Eldoret</b></p>
+</div>
+<div class="divider">♡ ♡ ♡</div>
+<a href="#" class="btn" onclick="document.getElementById('secret').style.display='block'; return false;">I Miss You Too ❤️</a>
+<p id="secret" style="display:none;margin-top:20px;font-family:'Great Vibes',cursive;font-size:26px;color:#d93d6b;">I miss you more, my Josephine. Every single day.</p>
+<div class="footer">Made with all my bundles and all my heart — For Josephine Only<br><span id="date"></span></div>
+</div></div>
+<script>
+const heartsEl=document.getElementById('hearts');
+function createHeart(){const h=document.createElement('div');h.className='heart';h.innerHTML='❤';h.style.left=Math.random()*100+'vw';h.style.fontSize=(12+Math.random()*20)+'px';h.style.animationDuration=(4+Math.random()*4)+'s';heartsEl.appendChild(h);setTimeout(()=>h.remove(),6000);}
+setInterval(createHeart,300);
+document.getElementById('date').innerText=new Date().toLocaleDateString('en-KE',{weekday:'long',year:'numeric',month:'long',day:'numeric'});
+</script>
+</body></html>
