@@ -3,61 +3,101 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>For My Forever</title>
+<title>For My Special Group</title>
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 <style>
+*{box-sizing:border-box}
 body{
-  margin:0; min-height:100vh; background:radial-gradient(circle at top,#ff7e9d,#7a1f3a,#1a0a0f);
-  display:flex; align-items:center; justify-content:center; font-family:'Poppins',sans-serif; overflow:hidden;
+  margin:0; min-height:100vh; 
+  background:radial-gradient(circle at top,#ff5e8a,#7a1f3a,#0d0708);
+  display:flex; align-items:center; justify-content:center; 
+  font-family:'Poppins',sans-serif; overflow:hidden; color:white;
 }
-.glass{
-  backdrop-filter: blur(20px); background: rgba(255,255,255,0.12);
-  border:1px solid rgba(255,255,255,0.2); border-radius:30px; padding:40px 30px; width:90%; max-width:420px;
-  text-align:center; color:white; position:relative; z-index:10; box-shadow:0 20px 60px rgba(0,0,0,0.4);
+.container{ width:90%; max-width:450px; position:relative; z-index:10; }
+.card{
+  backdrop-filter: blur(20px); background: rgba(255,255,255,0.13);
+  border:1px solid rgba(255,255,255,0.22); border-radius:28px; 
+  padding:38px 28px; text-align:center; box-shadow:0 20px 60px rgba(0,0,0,0.45);
+  display:none; animation: pop 0.8s ease;
 }
-h1{ font-family:'Great Vibes',cursive; font-size:48px; margin:0; }
-.final-msg{ margin-top:25px; font-size:18px; line-height:1.6; font-weight:300; }
-.final-msg b{ font-weight:600; color:#ffd1dc; }
-.heart{ font-size:32px; animation: pulse 1.5s infinite; }
-@keyframes pulse{ 0%{transform:scale(1)} 50%{transform:scale(1.2)} 100%{transform:scale(1)} }
-
-/* Floating Love Tags */
+.card.active{ display:block; }
+@keyframes pop{ from{transform:scale(0.9) translateY(20px); opacity:0} to{transform:scale(1) translateY(0); opacity:1} }
+h1{ font-family:'Great Vibes',cursive; font-size:44px; margin:0 0 15px 0; }
+p{ font-size:17px; line-height:1.7; font-weight:300; margin:0; }
+b{ font-weight:600; color:#ffd1dc; }
+.heart{ font-size:34px; animation: pulse 1.4s infinite; margin-bottom:10px; }
+@keyframes pulse{ 0%,100%{transform:scale(1)} 50%{transform:scale(1.25)} }
+button{
+  margin-top:25px; background:white; color:#7a1f3a; border:none; padding:12px 28px;
+  border-radius:50px; font-weight:600; font-family:'Poppins',sans-serif; cursor:pointer;
+  box-shadow:0 8px 20px rgba(0,0,0,0.2); transition:0.3s;
+}
+button:hover{ transform:scale(1.05); }
 .tag{
-  position:absolute; font-family:'Great Vibes',cursive; font-size:22px; color:rgba(255,255,255,0.9);
-  background:rgba(255,255,255,0.15); padding:6px 14px; border-radius:20px; border:1px solid rgba(255,255,255,0.2);
-  animation: float 6s ease-in-out infinite; white-space:nowrap;
+  position:absolute; font-family:'Great Vibes',cursive; font-size:20px; 
+  background:rgba(255,255,255,0.15); padding:6px 14px; border-radius:20px; 
+  border:1px solid rgba(255,255,255,0.2); animation: float 5s ease-in-out infinite;
 }
-@keyframes float{
-  0%,100%{ transform: translateY(0) rotate(-3deg); }
-  50%{ transform: translateY(-20px) rotate(3deg); }
-}
-.t1{ top:10%; left:8%; animation-delay:0s; }
-.t2{ top:15%; right:10%; animation-delay:1s; }
-.t3{ bottom:20%; left:12%; animation-delay:2s; }
-.t4{ bottom:12%; right:8%; animation-delay:0.5s; }
-.t5{ top:45%; left:5%; animation-delay:1.5s; }
-.t6{ top:40%; right:5%; animation-delay:2.5s; }
+@keyframes float{ 0%,100%{transform:translateY(0)} 50%{transform:translateY(-18px)} }
+.t1{ top:8%; left:6%; } .t2{ top:12%; right:8%; animation-delay:1s } 
+.t3{ bottom:10%; left:10%; animation-delay:2s } .t4{ bottom:15%; right:10%; animation-delay:0.5s }
+.final{ font-family:'Great Vibes',cursive; font-size:38px; line-height:1.2; color:#ffdde6; }
 </style>
 </head>
 <body>
 
-<span class="tag t1">My Queen 👑</span>
-<span class="tag t2">My Soulmate 💫</span>
-<span class="tag t3">My Everything ❤️</span>
-<span class="tag t4">My Forever ♾️</span>
-<span class="tag t5">My Home 🏡</span>
-<span class="tag t6">My Peace 🕊️</span>
+<span class="tag t1"> Queen 👑</span>
+<span class="tag t2"> Soulmate 💫</span>
+<span class="tag t3"> Everything ❤️</span>
+<span class="tag t4"> Forever ♾️</span>
 
-<div class="glass">
-  <div class="heart">❤️</div>
-  <h1>For You</h1>
-  <div class="final-msg">
-    I have so much to tell you...<br><br>
-    But for now just know this —<br>
-    <b>When we meet, I'm going to hold you so tight and never let go.</b><br><br>
-    You are my today and all of my tomorrows.
+<div class="container">
+  <!-- CARD 1 - The Late Night One -->
+  <div class="card active" id="c1">
+    <div class="heart">🥳</div>
+    <h1>Too Late to Sleep</h1>
+    <p>
+      It's too late at night and I'm still awake...<br><br>
+      Because my heart won't let me sleep without thinking of <b>you all</b>.<br>
+      This group is not just a group, it's my peace, my escape, my home.
+    </p>
+    <button onclick="next(2)">Read Next ❤️</button>
+  </div>
+
+  <!-- CARD 2 - The Unique One -->
+  <div class="card" id="c2">
+    <div class="heart">✨</div>
+    <h1>Something Unique</h1>
+    <p>
+      In a world full of temporary people...<br><br>
+      I found something <b>rare and nucleic</b> — a bond that holds us together like family.<br>
+      You all are special, you all are irreplaceable.<br>
+      I cherish every message, every laugh, every moment with you.
+    </p>
+    <button onclick="next(3)">One More Message 💌</button>
+  </div>
+
+  <!-- CARD 3 - Final Thank You -->
+  <div class="card" id="c3">
+    <div class="heart">❤️</div>
+    <h1>From My Heart</h1>
+    <p class="final">
+      Thank you for loving<br>Admin Denzel
+    </p>
+    <p style="margin-top:20px;">
+      Your love and support means everything to me.<br>
+      I will never forget what you all have done for me.<br><br>
+      <b>Forever grateful, forever yours.</b>
+    </p>
+    <button onclick="next(1)">Read Again 🔁</button>
   </div>
 </div>
 
+<script>
+function next(n){
+  document.querySelectorAll('.card').forEach(c=>c.classList.remove('active'));
+  document.getElementById('c'+n).classList.add('active');
+}
+</script>
 </body>
 </html>
