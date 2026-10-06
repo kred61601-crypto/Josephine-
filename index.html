@@ -1,50 +1,72 @@
 <!DOCTYPE html>
 <html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>For My Baby ❤️</title>
+<title>For My Baby 💜</title>
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Poppins',sans-serif;min-height:100vh;background:linear-gradient(135deg,#2a0845,#6441a5,#8a2be2,#ff5c8a);overflow-x:hidden;position:relative}
+body{font-family:'Poppins',sans-serif;min-height:100vh;background:linear-gradient(135deg,#2a0845,#6441a5,#8a2be2,#ff5c8a);position:relative;overflow-x:hidden}
 .emoji-bg{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
-.float-emoji{position:absolute;bottom:-50px;animation:rise linear infinite;user-select:none}
-@keyframes rise{0%{transform:translateY(0) translateX(0) rotate(0deg);opacity:0.9}100%{transform:translateY(-125vh) translateX(50px) rotate(360deg);opacity:0}}
+.float-emoji{position:absolute;bottom:-50px;animation:rise linear infinite}
+@keyframes rise{0%{transform:translateY(0) rotate(0deg);opacity:0.9}100%{transform:translateY(-130vh) rotate(360deg);opacity:0}}
 .hero{max-width:520px;margin:0 auto;padding:22px 16px;position:relative;z-index:1}
-.card{background:linear-gradient(135deg,#8e44ad,#9b59b6,#a569bd);border-radius:32px;padding:28px 18px;text-align:center;box-shadow:0 25px 70px rgba(142,68,173,0.6);border:2px solid rgba(255,255,255,0.3)}
-.emoji-main{width:180px;height:180px;border-radius:50%;margin:0 auto 14px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#e8daef,#d2b4de);border:5px solid #fff;font-size:80px;box-shadow:0 12px 35px rgba(0,0,0,0.3);animation:beat 1.2s infinite}
-@keyframes beat{0%,100%{transform:scale(1)}50%{transform:scale(1.15)}}
-h1{font-family:'Great Vibes',cursive;font-size:58px;color:#fff;text-shadow:0 2px 10px rgba(0,0,0,0.3)}
-.sub{letter-spacing:3px;font-size:11px;color:#f5eef8;margin-bottom:12px;text-transform:uppercase}
-p{font-size:15px;line-height:1.8;color:#f9ebff;margin-bottom:10px}
-.pink{color:#ffe6ff;font-weight:700;text-shadow:0 1px 4px rgba(0,0,0,0.3)}
+.card{background:linear-gradient(135deg,#e8daef 0%, #d2b4de 100%);border-radius:32px;padding:28px 18px;text-align:center;box-shadow:0 25px 80px rgba(42,8,69,0.6);border:3px solid #fff}
+.emoji-main{width:160px;height:160px;border-radius:50%;margin:0 auto 14px;display:flex;align-items:center;justify-content:center;background:#fff;border:5px solid #9b59b6;font-size:70px;box-shadow:0 10px 30px rgba(0,0,0,0.2);animation:beat 1.2s infinite}
+@keyframes beat{0%,100%{transform:scale(1)}50%{transform:scale(1.12)}}
+h1{font-family:'Great Vibes',cursive;font-size:62px;color:#6c3483;line-height:1}
+.sub{letter-spacing:3px;font-size:11px;color:#7d3c98;margin:8px 0 12px;font-weight:600}
+p{font-size:15px;line-height:1.8;color:#4a235a;margin-bottom:10px}
 .gallery{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:20px 0}
-.emoji-box{height:150px;display:flex;align-items:center;justify-content:center;font-size:62px;border-radius:20px;background:linear-gradient(135deg,#d7bde2,#bb8fce);border:2px solid rgba(255,255,255,0.6);box-shadow:0 8px 20px rgba(0,0,0,0.2);animation:float 3s ease-in-out infinite}
+.emoji-box{height:140px;display:flex;align-items:center;justify-content:center;font-size:58px;border-radius:20px;background:#fff;border:2px solid #d2b4de;box-shadow:0 6px 18px rgba(0,0,0,0.1);animation:float 3s ease-in-out infinite}
 .emoji-box:nth-child(2){animation-delay:0.5s}.emoji-box:nth-child(3){animation-delay:1s}.emoji-box:nth-child(4){animation-delay:1.5s}
-@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
-.btn{width:100%;background:linear-gradient(135deg,#fff,#f5eef8);color:#8e44ad;border:none;padding:14px;border-radius:50px;font-weight:700;margin-top:12px;cursor:pointer;box-shadow:0 10px 25px rgba(0,0,0,0.2)}
-.btn2{background:transparent;color:#fff;border:2px solid #fff}
-#overlay{position:fixed;inset:0;background:linear-gradient(135deg,#2a0845,#6441a5,#8a2be2);display:flex;align-items:center;justify-content:center;z-index:20;flex-direction:column;gap:12px;text-align:center;padding:20px}
-.foot{margin-top:16px;font-size:10px;color:#e8daef;letter-spacing:3px}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.btn{width:100%;background:linear-gradient(135deg,#8e44ad,#6c3483);color:#fff;border:none;padding:14px;border-radius:50px;font-weight:700;margin-top:12px;cursor:pointer;font-size:14px;box-shadow:0 8px 20px rgba(108,52,131,0.3)}
+.btn2{background:#fff;color:#6c3483;border:2px solid #9b59b6}
+#secret{position:fixed;inset:0;background:rgba(0,0,0,0.6);display:none;align-items:center;justify-content:center;padding:20px;z-index:30}
+.secret-box{background:linear-gradient(135deg,#fff,#f5eef8);border-radius:24px;padding:26px 20px;max-width:380px;text-align:center;border:3px solid #9b59b6;box-shadow:0 20px 60px rgba(0,0,0,0.4)}
+#overlay{position:fixed;inset:0;background:linear-gradient(135deg,#2a0845,#8e44ad,#d2b4de);display:flex;align-items:center;justify-content:center;z-index:40;flex-direction:column;gap:12px;text-align:center;padding:20px}
+.foot{margin-top:16px;font-size:10px;color:#6c3483;letter-spacing:3px;font-weight:600}
 </style></head><body>
 <div class="emoji-bg" id="emojiBg"></div>
-<div id="overlay"><div style="font-size:70px;animation:beat 1.2s infinite">💜</div><div style="font-family:'Great Vibes',cursive;font-size:52px;color:#fff">For My Baby</div><p style="color:#f5eef8">My sweetheart, I made this for you 💜</p><button class="btn" style="width:auto;padding:14px 32px;background:#fff;color:#8e44ad" onclick="this.parentElement.style.display='none'">Tap to Open 💌</button></div>
+
+<div id="overlay">
+<div style="font-size:70px;animation:beat 1.2s infinite">💜</div>
+<div style="font-family:'Great Vibes',cursive;font-size:56px;color:#fff">For My Baby</div>
+<p style="color:#fff">My sweetheart, I made this for you</p>
+<button class="btn" style="width:auto;padding:14px 36px;background:#fff;color:#6c3483" onclick="document.getElementById('overlay').style.display='none';document.getElementById('music').play().catch(()=>{});">Tap to Open 💌</button>
+</div>
+
 <div class="hero"><div class="card">
 <div class="emoji-main">💍</div>
-<h1>My Baby</h1><div class="sub">My Sweetheart — My Future Wifey</div>
-<p>My wifey, my sweetheart, distance means nothing when you are in my heart. You are the <span class="pink">woman I'm dreaming to build a life with</span>.</p>
+<h1>My Baby</h1>
+<div class="sub">MY SWEETHEART — MY FUTURE WIFEY</div>
+<p>My wifey, my sweetheart, distance means nothing when you are in my heart. You are the <b>woman I'm dreaming to build a life with.</b></p>
+
 <div class="gallery">
 <div class="emoji-box">❤️</div>
-<div class="emoji-box">🤭</div>
+<div class="emoji-box">🥰</div>
 <div class="emoji-box">💍</div>
 <div class="emoji-box">😘</div>
 </div>
-<button class="btn" onclick="alert('My wifey, I love you so much ❤️💜 You are my everything!')">Open My Secret Letter 💌</button>
-<button class="btn btn2" onclick="toggleMusic()">🎵 Play / Pause Our Song</button>
+
+<button class="btn" onclick="document.getElementById('secret').style.display='flex'">Open My Secret Letter 💌</button>
+<button class="btn btn2" onclick="let m=document.getElementById('music');m.paused?m.play():m.pause()">🎵 Play / Pause Our Song</button>
 <div class="foot">MY BABY FOREVER 💜 2026</div>
 </div></div>
-<audio id="music" loop preload="auto"><source src="https://cdn.pixabay.com/audio/2024/09/19/audio_efdaf44a1d.mp3" type="audio/mpeg"></audio>
+
+<div id="secret" onclick="this.style.display='none'">
+<div class="secret-box" onclick="event.stopPropagation()">
+<div style="font-family:'Great Vibes',cursive;font-size:44px;color:#6c3483">My Wifey,</div>
+<p style="color:#4a235a;margin-top:10px">My baby, my sweetheart, my future wifey — you are the woman I'm dreaming to build a life with.</p>
+<p style="color:#4a235a">Every day I fall for you more. You are my calm, my smile, my home. I love you more than yesterday, but less than tomorrow.</p>
+<p style="color:#6c3483;font-weight:700;margin-top:10px">Forever yours, always ❤️💜</p>
+<button class="btn" onclick="document.getElementById('secret').style.display='none'">Close ❤️</button>
+</div>
+</div>
+
+<audio id="music" loop><source src="https://cdn.pixabay.com/audio/2024/09/19/audio_efdaf44a1d.mp3" type="audio/mpeg"></audio>
+
 <script>
-const emojis=['💜','💖','❤️','💍','💋','😘','💕','💘','🌸','✨','💓','🥰'];
-const container=document.getElementById('emojiBg');
-for(let i=0;i<35;i++){let e=document.createElement('div');e.className='float-emoji';e.textContent=emojis[Math.floor(Math.random()*emojis.length)];e.style.left=Math.random()*100+'vw';e.style.fontSize=(16+Math.random()*32)+'px';e.style.animationDuration=(4+Math.random()*7)+'s';e.style.animationDelay=Math.random()*5+'s';container.appendChild(e)}
-let playing=false;function toggleMusic(){let m=document.getElementById('music');if(playing){m.pause();playing=false}else{m.play().then(()=>playing=true)}}
+const emojis=['💜','💖','❤️','💍','💋','😘','💕','✨','🥰'];
+const c=document.getElementById('emojiBg');
+for(let i=0;i<30;i++){let e=document.createElement('div');e.className='float-emoji';e.textContent=emojis[Math.floor(Math.random()*emojis.length)];e.style.left=Math.random()*100+'vw';e.style.fontSize=(18+Math.random()*28)+'px';e.style.animationDuration=(5+Math.random()*6)+'s';e.style.animationDelay=Math.random()*5+'s';c.appendChild(e)}
 </script></body></html>
