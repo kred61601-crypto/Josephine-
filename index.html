@@ -1,103 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>For My Special Group</title>
+<html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Baby ❤️</title>
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 <style>
-*{box-sizing:border-box}
-body{
-  margin:0; min-height:100vh; 
-  background:radial-gradient(circle at top,#ff5e8a,#7a1f3a,#0d0708);
-  display:flex; align-items:center; justify-content:center; 
-  font-family:'Poppins',sans-serif; overflow:hidden; color:white;
-}
-.container{ width:90%; max-width:450px; position:relative; z-index:10; }
-.card{
-  backdrop-filter: blur(20px); background: rgba(255,255,255,0.13);
-  border:1px solid rgba(255,255,255,0.22); border-radius:28px; 
-  padding:38px 28px; text-align:center; box-shadow:0 20px 60px rgba(0,0,0,0.45);
-  display:none; animation: pop 0.8s ease;
-}
-.card.active{ display:block; }
-@keyframes pop{ from{transform:scale(0.9) translateY(20px); opacity:0} to{transform:scale(1) translateY(0); opacity:1} }
-h1{ font-family:'Great Vibes',cursive; font-size:44px; margin:0 0 15px 0; }
-p{ font-size:17px; line-height:1.7; font-weight:300; margin:0; }
-b{ font-weight:600; color:#ffd1dc; }
-.heart{ font-size:34px; animation: pulse 1.4s infinite; margin-bottom:10px; }
-@keyframes pulse{ 0%,100%{transform:scale(1)} 50%{transform:scale(1.25)} }
-button{
-  margin-top:25px; background:white; color:#7a1f3a; border:none; padding:12px 28px;
-  border-radius:50px; font-weight:600; font-family:'Poppins',sans-serif; cursor:pointer;
-  box-shadow:0 8px 20px rgba(0,0,0,0.2); transition:0.3s;
-}
-button:hover{ transform:scale(1.05); }
-.tag{
-  position:absolute; font-family:'Great Vibes',cursive; font-size:20px; 
-  background:rgba(255,255,255,0.15); padding:6px 14px; border-radius:20px; 
-  border:1px solid rgba(255,255,255,0.2); animation: float 5s ease-in-out infinite;
-}
-@keyframes float{ 0%,100%{transform:translateY(0)} 50%{transform:translateY(-18px)} }
-.t1{ top:8%; left:6%; } .t2{ top:12%; right:8%; animation-delay:1s } 
-.t3{ bottom:10%; left:10%; animation-delay:2s } .t4{ bottom:15%; right:10%; animation-delay:0.5s }
-.final{ font-family:'Great Vibes',cursive; font-size:38px; line-height:1.2; color:#ffdde6; }
-</style>
-</head>
-<body>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Poppins',sans-serif;min-height:100vh;background:linear-gradient(135deg,#2a0845,#6441a5,#8a2be2,#ff5c8a);overflow-x:hidden;position:relative}
+.emoji-bg{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.float-emoji{position:absolute;bottom:-50px;animation:rise linear infinite;user-select:none}
+@keyframes rise{0%{transform:translateY(0) translateX(0) rotate(0deg);opacity:0.9}100%{transform:translateY(-125vh) translateX(50px) rotate(360deg);opacity:0}}
+.hero{max-width:520px;margin:0 auto;padding:22px 16px;position:relative;z-index:1}
+.card{background:linear-gradient(135deg,#8e44ad,#9b59b6,#a569bd);border-radius:32px;padding:28px 18px;text-align:center;box-shadow:0 25px 70px rgba(142,68,173,0.6);border:2px solid rgba(255,255,255,0.3)}
+.emoji-main{width:180px;height:180px;border-radius:50%;margin:0 auto 14px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#e8daef,#d2b4de);border:5px solid #fff;font-size:80px;box-shadow:0 12px 35px rgba(0,0,0,0.3);animation:beat 1.2s infinite}
+@keyframes beat{0%,100%{transform:scale(1)}50%{transform:scale(1.15)}}
+h1{font-family:'Great Vibes',cursive;font-size:58px;color:#fff;text-shadow:0 2px 10px rgba(0,0,0,0.3)}
+.sub{letter-spacing:3px;font-size:11px;color:#f5eef8;margin-bottom:12px;text-transform:uppercase}
+p{font-size:15px;line-height:1.8;color:#f9ebff;margin-bottom:10px}
+.pink{color:#ffe6ff;font-weight:700;text-shadow:0 1px 4px rgba(0,0,0,0.3)}
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:20px 0}
+.emoji-box{height:150px;display:flex;align-items:center;justify-content:center;font-size:62px;border-radius:20px;background:linear-gradient(135deg,#d7bde2,#bb8fce);border:2px solid rgba(255,255,255,0.6);box-shadow:0 8px 20px rgba(0,0,0,0.2);animation:float 3s ease-in-out infinite}
+.emoji-box:nth-child(2){animation-delay:0.5s}.emoji-box:nth-child(3){animation-delay:1s}.emoji-box:nth-child(4){animation-delay:1.5s}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+.btn{width:100%;background:linear-gradient(135deg,#fff,#f5eef8);color:#8e44ad;border:none;padding:14px;border-radius:50px;font-weight:700;margin-top:12px;cursor:pointer;box-shadow:0 10px 25px rgba(0,0,0,0.2)}
+.btn2{background:transparent;color:#fff;border:2px solid #fff}
+#overlay{position:fixed;inset:0;background:linear-gradient(135deg,#2a0845,#6441a5,#8a2be2);display:flex;align-items:center;justify-content:center;z-index:20;flex-direction:column;gap:12px;text-align:center;padding:20px}
+.foot{margin-top:16px;font-size:10px;color:#e8daef;letter-spacing:3px}
 
-<span class="tag t1"> Queen 👑</span>
-<span class="tag t2"> Soulmate 💫</span>
-<span class="tag t3"> Everything ❤️</span>
-<span class="tag t4"> Forever ♾️</span>
+/* NEW LETTER POPUP */
+#letterBox{position:fixed;inset:0;background:rgba(42,8,69,0.85);backdrop-filter:blur(12px);z-index:30;display:none;align-items:center;justify-content:center;padding:16px}
+.letter{max-width:520px;width:100%;background:linear-gradient(135deg,#fff,#f9f0ff);border-radius:28px;padding:28px 22px;max-height:85vh;overflow-y:auto;box-shadow:0 30px 80px rgba(0,0,0,0.5);animation:pop 0.6s ease;text-align:left;color:#4a235a}
+@keyframes pop{from{transform:scale(0.85) translateY(30px);opacity:0}to{transform:scale(1) translateY(0);opacity:1}}
+.letter h2{font-family:'Great Vibes',cursive;font-size:42px;text-align:center;color:#8e44ad;margin-bottom:8px}
+.letter .date{text-align:center;font-size:11px;letter-spacing:2px;color:#9b59b6;margin-bottom:18px}
+.letter p{color:#5d2a6b;font-size:14.5px;line-height:1.9;margin-bottom:14px}
+.letter .sign{font-family:'Great Vibes',cursive;font-size:32px;text-align:right;margin-top:20px;color:#8e44ad}
+.closeBtn{width:100%;background:#8e44ad;color:#fff;border:none;padding:13px;border-radius:50px;font-weight:700;margin-top:18px;cursor:pointer}
+</style></head><body>
+<div class="emoji-bg" id="emojiBg"></div>
+<div id="overlay"><div style="font-size:70px;animation:beat 1.2s infinite">💜</div><div style="font-family:'Great Vibes',cursive;font-size:52px;color:#fff">For My Baby</div><p style="color:#f5eef8">My sweetheart, I made this for you 💜</p><button class="btn" style="width:auto;padding:14px 32px;background:#fff;color:#8e44ad" onclick="this.parentElement.style.display='none'">Tap to Open 💌</button></div>
+<div class="hero"><div class="card">
+<div class="emoji-main">💍</div>
+<h1>My Baby</h1><div class="sub">My Sweetheart — My Future Wifey</div>
+<p>My wifey, my sweetheart, distance means nothing when you are in my heart. You are the <span class="pink">woman I'm dreaming to build a life with</span>.</p>
+<div class="gallery">
+<div class="emoji-box">❤️</div>
+<div class="emoji-box">💋</div>
+<div class="emoji-box">💍</div>
+<div class="emoji-box">😘</div>
+</div>
+<button class="btn" onclick="openLetter()">Open My Secret Letter 💌</button>
+<button class="btn btn2" onclick="toggleMusic()">🎵 Play / Pause Our Song</button>
+<div class="foot">MY BABY FOREVER 💜 2026</div>
+</div></div>
 
-<div class="container">
-  <!-- CARD 1 - The Late Night One -->
-  <div class="card active" id="c1">
-    <div class="heart">🥳</div>
-    <h1>Too Late to Sleep</h1>
-    <p>
-      It's too late at night and I'm still awake...<br><br>
-      Because my heart won't let me sleep without thinking of <b>you all</b>.<br>
-      This group is not just a group, it's my peace, my escape, my home.
-    </p>
-    <button onclick="next(2)">Read Next ❤️</button>
-  </div>
+<!-- SECRET ROMANTIC LETTER -->
+<div id="letterBox" onclick="if(event.target==this)closeLetter()">
+<div class="letter">
+<h2>My Dearest Baby,</h2>
+<div class="date">WRITTEN WITH ALL MY LOVE — TONIGHT 💜</div>
 
-  <!-- CARD 2 - The Unique One -->
-  <div class="card" id="c2">
-    <div class="heart">✨</div>
-    <h1>Something Unique</h1>
-    <p>
-      In a world full of temporary people...<br><br>
-      I found something <b>rare and nucleic</b> — a bond that holds us together like family.<br>
-      You all are special, you all are irreplaceable.<br>
-      I cherish every message, every laugh, every moment with you.
-    </p>
-    <button onclick="next(3)">One More Message 💌</button>
-  </div>
+<p>My love,</p>
 
-  <!-- CARD 3 - Final Thank You -->
-  <div class="card" id="c3">
-    <div class="heart">❤️</div>
-    <h1>From My Heart</h1>
-    <p class="final">
-      Thank you for loving<br>Admin Denzel
-    </p>
-    <p style="margin-top:20px;">
-      Your love and support means everything to me.<br>
-      I will never forget what you all have done for me.<br><br>
-      <b>Forever grateful, forever yours.</b>
-    </p>
-    <button onclick="next(1)">Read Again 🔁</button>
-  </div>
+<p>If you are reading this, just know I sat down and thought about us for a long time. I don't even know where to start because no words are ever enough to describe what you mean to me.</p>
+
+<p>From the first day you came into my life, everything changed. You brought light into my dark days, you brought peace into my chaos. You are not just my girlfriend, you are my <b>future wifey, my soulmate, my everything.</b></p>
+
+<p>I know distance is hard sometimes. Sometimes I stay up too late just thinking about you, and it's <b>too late to sleep</b> because your face won't leave my mind. But I promise you, distance is just a test, and we are going to pass it beautifully.</p>
+
+<p>You are so unique, so rare, so nucleic to my heart — like the center that holds me together. Without you, I am incomplete.</p>
+
+<p>And my baby, I need you to know this from the bottom of my heart...</p>
+
+<p style="text-align:center; font-weight:700; font-size:16px; color:#8e44ad; background:rgba(142,68,173,0.1); padding:12px; border-radius:14px;">When we finally meet, I'm going to hold you so tight, look into your eyes, and never let you go. I have waited for that moment my whole life.</p>
+
+<p>You are my today, my tomorrow, my forever. Thank you for existing, thank you for loving me, thank you for being patient with me.</p>
+
+<p>And from my soul to yours — <b>thank you for loving Admin Denzel.</b> Your love is the greatest gift I have ever received.</p>
+
+<p>I love you more than words can ever explain. More than yesterday, but less than I will tomorrow.</p>
+
+<div class="sign">Forever yours,<br>Your Denzel 💍❤️</div>
+
+<button class="closeBtn" onclick="closeLetter()">Close & Keep You in My Heart 💜</button>
+</div>
 </div>
 
+<audio id="music" loop preload="auto"><source src="https://cdn.pixabay.com/audio/2024/09/19/audio_efdaf44a1d.mp3" type="audio/mpeg"></audio>
 <script>
-function next(n){
-  document.querySelectorAll('.card').forEach(c=>c.classList.remove('active'));
-  document.getElementById('c'+n).classList.add('active');
-}
-</script>
-</body>
-</html>
+const emojis=['💜','💖','❤️','💍','💋','😘','💕','💘','🌸','✨','💓','🥰'];
+const container=document.getElementById('emojiBg');
+for(let i=0;i<35;i++){let e=document.createElement('div');e.className='float-emoji';e.textContent=emojis[Math.floor(Math.random()*emojis.length)];e.style.left=Math.random()*100+'vw';e.style.fontSize=(16+Math.random()*32)+'px';e.style.animationDuration=(4+Math.random()*7)+'s';e.style.animationDelay=Math.random()*5+'s';container.appendChild(e)}
+let playing=false;function toggleMusic(){let m=document.getElementById('music');if(playing){m.pause();playing=false}else{m.play().then(()=>playing=true)}}
+function openLetter(){document.getElementById('letterBox').style.display='flex'}
+function closeLetter(){document.getElementById('letterBox').style.display='none'}
+</script></body></html>
