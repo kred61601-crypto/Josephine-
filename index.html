@@ -3,72 +3,75 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>For My JOSEPHINE ❤️</title>
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<title>For My Baby ❤️</title>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Poppins',sans-serif;min-height:100vh;background:linear-gradient(135deg,#ffdee9,#ffafcc,#e0aaff);overflow-x:hidden}
-.hearts-bg{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
-.heart{position:absolute;bottom:-30px;animation:floatUp linear infinite}
-@keyframes floatUp{0%{transform:translateY(0) rotate(0deg);opacity:1}100%{transform:translateY(-115vh) rotate(360deg);opacity:0}}
+body{font-family:'Poppins',sans-serif;min-height:100vh;background:linear-gradient(135deg,#ffdee9,#ff5c8a,#ff0a54);overflow-x:hidden;position:relative}
+.bubbles{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.bubble{position:absolute;bottom:-40px;border-radius:50%;animation:rise linear infinite;opacity:0.7}
+@keyframes rise{0%{transform:translateY(0) translateX(0);opacity:0.8}100%{transform:translateY(-120vh) translateX(40px);opacity:0}}
 .hero{max-width:520px;margin:0 auto;padding:22px 16px;position:relative;z-index:1}
-.card{background:rgba(255,255,255,0.95);border-radius:32px;padding:26px 18px;text-align:center;box-shadow:0 20px 60px rgba(224,58,107,0.25);border:1px solid #ffe1ea}
-.main-img{width:180px;height:180px;border-radius:50%;object-fit:cover;margin:0 auto 12px;display:block;border:5px solid #fff;box-shadow:0 12px 35px rgba(224,58,107,0.35)}
-h1{font-family:'Great Vibes',cursive;font-size:62px;color:#e03a6b}
-.sub{letter-spacing:4px;font-size:10px;color:#b57a8a;margin-bottom:8px;text-transform:uppercase}
-.jj{font-family:'Great Vibes',cursive;font-size:52px;color:#e03a6b;animation:beat 1.2s infinite}
+.card{background:rgba(255,255,255,0.96);border-radius:32px;padding:26px 18px;text-align:center;box-shadow:0 25px 70px rgba(255,10,84,0.3);border:1px solid #ffe1ea}
+.emoji-main{width:190px;height:190px;border-radius:50%;margin:0 auto 14px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#fff0f5,#ffafcc);border:5px solid #fff;box-shadow:0 12px 35px rgba(255,10,84,0.4);font-size:90px;animation:beat 1.2s ease-in-out infinite}
 @keyframes beat{0%,100%{transform:scale(1)}50%{transform:scale(1.15)}}
-p{font-size:15px;line-height:1.8;color:#5a3a44;margin-bottom:10px}
-.pink{color:#e03a6b;font-weight:600}
+h1{font-family:'Great Vibes',cursive;font-size:58px;color:#e11d48;line-height:1.1}
+.sub{letter-spacing:3px;font-size:11px;color:#c45a72;margin-bottom:10px;text-transform:uppercase}
+p{font-size:15px;line-height:1.85;color:#5a3a44;margin-bottom:12px}
+.pink{color:#e11d48;font-weight:600}
 .gallery{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:18px 0}
-.gallery img{width:100%;height:160px;object-fit:cover;border-radius:20px;border:2px solid #fff;box-shadow:0 6px 18px rgba(0,0,0,0.15)}
-.btn{width:100%;background:linear-gradient(135deg,#e03a6b,#a855f7);color:#fff;border:none;padding:15px;border-radius:50px;font-weight:600;margin-top:12px;cursor:pointer;box-shadow:0 10px 25px rgba(224,58,107,0.3)}
-.btn2{background:#fff;color:#e03a6b;border:1.5px solid #ffccd9}
+.emoji-box{width:100%;height:160px;display:flex;align-items:center;justify-content:center;font-size:64px;border-radius:20px;border:2px solid #fff;box-shadow:0 6px 18px rgba(0,0,0,0.15);background:linear-gradient(135deg,#fff0f5,#ffe1ea);animation:float 3s ease-in-out infinite}
+.emoji-box:nth-child(2){animation-delay:0.5s}
+.emoji-box:nth-child(3){animation-delay:1s}
+.emoji-box:nth-child(4){animation-delay:1.5s}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+.btn{width:100%;background:linear-gradient(135deg,#ff0a54,#ff5c8a,#ff85a1);color:#fff;border:none;padding:15px;border-radius:50px;font-weight:600;margin-top:12px;cursor:pointer;box-shadow:0 10px 25px rgba(255,10,84,0.35);font-size:14px}
+.btn2{background:#fff;color:#e11d48;border:1.5px solid #ffccd9}
 #secret{position:fixed;inset:0;background:rgba(0,0,0,0.6);display:none;align-items:center;justify-content:center;padding:20px;z-index:10}
 .secret-box{background:#fff;border-radius:24px;padding:28px 20px;max-width:400px;text-align:center}
-#overlay{position:fixed;inset:0;background:linear-gradient(135deg,#fff5f7,#ffd6e7,#e0aaff);display:flex;align-items:center;justify-content:center;z-index:20;flex-direction:column;gap:10px;padding:20px;text-align:center}
-.foot{margin-top:18px;font-size:10px;color:#9a6a77;letter-spacing:2px}
+#overlay{position:fixed;inset:0;background:linear-gradient(135deg,#fff0f5,#ffafcc,#ff5c8a);display:flex;align-items:center;justify-content:center;z-index:20;flex-direction:column;gap:10px;padding:20px;text-align:center}
+.foot{margin-top:18px;font-size:10px;color:#9a6a77;letter-spacing:3px}
+.emoji-overlay{font-size:70px;animation:beat 1.2s infinite}
 </style>
 </head>
 <body>
 
-<div class="hearts-bg" id="hearts"></div>
+<div class="bubbles" id="bubbles"></div>
 
 <div id="overlay">
-<img src="https://files.catbox.moe/j1870y.jpg" class="main-img" style="width:130px;height:130px">
-<div style="font-family:'Great Vibes',cursive;font-size:50px;color:#e03a6b">For Josephine</div>
-<p>I made this for you ❤️</p>
-<button class="btn" style="width:auto;padding:14px 34px" onclick="startLove()">Tap to Open 💌</button>
+<div class="emoji-overlay">💖</div>
+<div style="font-family:'Great Vibes',cursive;font-size:52px;color:#e11d48">For My Baby</div>
+<p>My sweetheart, I made this for you ❤️</p>
+<button class="btn" style="width:auto;padding:14px 36px" onclick="startLove()">Tap to Open 💌</button>
 </div>
 
 <div class="hero">
 <div class="card">
-<img src="https://files.catbox.moe/j1870y.jpg" alt="Josephine" class="main-img">
-<h1>Josephine</h1>
-<div class="sub">My Favorite Person — Always</div>
-<div class="jj">J & J ❤️</div>
-<p>Distance means nothing when you are in my heart.</p>
-<p>You are my <span class="pink">peace, my joy, my everything</span>.</p>
+<div class="emoji-main">💍</div>
+<h1>My Baby</h1>
+<div class="sub">My Sweetheart — My Future Wifey</div>
+<p>My wifey, my sweetheart, distance means nothing when you are in my heart.</p>
+<p>You are the <span class="pink">woman I'm dreaming to build a life with</span>, my peace, my joy, my everything.</p>
 
 <div class="gallery">
-<img src="https://files.catbox.moe/j1870y.jpg">
-<img src="https://files.catbox.moe/j1870y.jpg">
-<img src="https://files.catbox.moe/j1870y.jpg">
-<img src="https://files.catbox.moe/j1870y.jpg">
+<div class="emoji-box">❤️</div>
+<div class="emoji-box">🥹</div>
+<div class="emoji-box">💍</div>
+<div class="emoji-box">😘</div>
 </div>
 
 <button class="btn" onclick="document.getElementById('secret').style.display='flex'">Open My Secret Letter 💌</button>
 <button class="btn btn2" onclick="toggleMusic()">🎵 Play / Pause Our Song</button>
-<div class="foot">FROM NAIROBI TO SAUDI — ALWAYS US ❤️<br>2026</div>
+<div class="foot">MY BABY FOREVER ❤️<br>2026</div>
 </div>
 </div>
 
 <div id="secret" onclick="this.style.display='none'">
 <div class="secret-box" onclick="event.stopPropagation()">
-<div style="font-family:'Great Vibes',cursive;font-size:40px;color:#e03a6b">My Wifey,</div>
-<p>If I could, I would cross the distance right now just to hug you. You are my always. I love you more than yesterday, but less than tomorrow.</p>
-<p>From Nairobi to Saudi Arabia — it's still us. Always us.</p>
-<p><b>Forever yours ❤️</b></p>
+<div style="font-family:'Great Vibes',cursive;font-size:42px;color:#e11d48">My Wifey,</div>
+<p>My baby, my sweetheart, my future wifey — you are the woman I'm dreaming to build a life with.</p>
+<p>Every day I fall for you more. You are my calm, my smile, my home. I love you more than yesterday, but less than tomorrow.</p>
+<p><b>Forever yours, always ❤️</b></p>
 <button class="btn" onclick="document.getElementById('secret').style.display='none'">Close ❤️</button>
 </div>
 </div>
@@ -78,9 +81,19 @@ p{font-size:15px;line-height:1.8;color:#5a3a44;margin-bottom:10px}
 </audio>
 
 <script>
-const emojis=['❤️','💖','💜','💕','🌸','✨'];
-const c=document.getElementById('hearts');
-for(let i=0;i<30;i++){let d=document.createElement('div');d.className='heart';d.innerText=emojis[Math.floor(Math.random()*emojis.length)];d.style.left=Math.random()*100+'vw';d.style.fontSize=(18+Math.random()*20)+'px';d.style.animationDuration=(4+Math.random()*6)+'s';d.style.animationDelay=Math.random()*5+'s';c.appendChild(d);}
+const bubbleContainer=document.getElementById('bubbles');
+const colors=['rgba(255,92,138,0.6)','rgba(255,10,84,0.5)','rgba(255,192,203,0.8)','rgba(255,255,255,0.5)'];
+for(let i=0;i<35;i++){
+ let b=document.createElement('div');
+ b.className='bubble';
+ let size=10+Math.random()*35;
+ b.style.width=size+'px'; b.style.height=size+'px';
+ b.style.left=Math.random()*100+'vw';
+ b.style.background=colors[Math.floor(Math.random()*colors.length)];
+ b.style.animationDuration=(4+Math.random()*6)+'s';
+ b.style.animationDelay=Math.random()*5+'s';
+ bubbleContainer.appendChild(b);
+}
 let playing=false;
 function startLove(){
 document.getElementById('overlay').style.display='none';
@@ -92,4 +105,4 @@ if(playing){m.pause();playing=false}else{m.play();playing=true}
 }
 </script>
 </body>
- </html>
+</html>
