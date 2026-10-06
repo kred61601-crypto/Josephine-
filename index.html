@@ -18,15 +18,12 @@ p{font-size:15px;line-height:1.8;color:#f9ebff;margin-bottom:10px}
 .pink{color:#ffe6ff;font-weight:700;text-shadow:0 1px 4px rgba(0,0,0,0.3)}
 .gallery{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:20px 0}
 .emoji-box{height:150px;display:flex;align-items:center;justify-content:center;font-size:62px;border-radius:20px;background:linear-gradient(135deg,#d7bde2,#bb8fce);border:2px solid rgba(255,255,255,0.6);box-shadow:0 8px 20px rgba(0,0,0,0.2);animation:float 3s ease-in-out infinite}
-.emoji-box:nth-child(2){animation-delay:0.5s}.emoji-box:nth-child(3){animation-delay:1s}.emoji-box:nth-child(4){animation-delay:1.5s}
 @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
 .btn{width:100%;background:linear-gradient(135deg,#fff,#f5eef8);color:#8e44ad;border:none;padding:14px;border-radius:50px;font-weight:700;margin-top:12px;cursor:pointer;box-shadow:0 10px 25px rgba(0,0,0,0.2)}
 .btn2{background:transparent;color:#fff;border:2px solid #fff}
 #overlay{position:fixed;inset:0;background:linear-gradient(135deg,#2a0845,#6441a5,#8a2be2);display:flex;align-items:center;justify-content:center;z-index:20;flex-direction:column;gap:12px;text-align:center;padding:20px}
 .foot{margin-top:16px;font-size:10px;color:#e8daef;letter-spacing:3px}
-
-/* NEW LETTER POPUP */
-#letterBox{position:fixed;inset:0;background:rgba(42,8,69,0.85);backdrop-filter:blur(12px);z-index:30;display:none;align-items:center;justify-content:center;padding:16px}
+#letterBox{position:fixed;inset:0;background:rgba(42,8,69,0.88);backdrop-filter:blur(12px);z-index:30;display:none;align-items:center;justify-content:center;padding:16px}
 .letter{max-width:520px;width:100%;background:linear-gradient(135deg,#fff,#f9f0ff);border-radius:28px;padding:28px 22px;max-height:85vh;overflow-y:auto;box-shadow:0 30px 80px rgba(0,0,0,0.5);animation:pop 0.6s ease;text-align:left;color:#4a235a}
 @keyframes pop{from{transform:scale(0.85) translateY(30px);opacity:0}to{transform:scale(1) translateY(0);opacity:1}}
 .letter h2{font-family:'Great Vibes',cursive;font-size:42px;text-align:center;color:#8e44ad;margin-bottom:8px}
@@ -52,35 +49,32 @@ p{font-size:15px;line-height:1.8;color:#f9ebff;margin-bottom:10px}
 <div class="foot">MY BABY FOREVER 💜 2026</div>
 </div></div>
 
-<!-- SECRET ROMANTIC LETTER -->
 <div id="letterBox" onclick="if(event.target==this)closeLetter()">
 <div class="letter">
-<h2>My Dearest Baby,</h2>
-<div class="date">WRITTEN WITH ALL MY LOVE — TONIGHT 💜</div>
+<h2>My Dearest Love,</h2>
+<div class="date">FROM MY HEART TO YOURS 💜</div>
 
-<p>My love,</p>
+<p>My Baby,</p>
 
-<p>If you are reading this, just know I sat down and thought about us for a long time. I don't even know where to start because no words are ever enough to describe what you mean to me.</p>
+<p>I don't know how to start because no words will ever be enough for what you mean to me.</p>
 
-<p>From the first day you came into my life, everything changed. You brought light into my dark days, you brought peace into my chaos. You are not just my girlfriend, you are my <b>future wifey, my soulmate, my everything.</b></p>
+<p>Since you walked into my life, everything feels different. You are my peace, my happiness, my home. You are not just my girlfriend — you are my future wifey, my soulmate, my forever person.</p>
 
-<p>I know distance is hard sometimes. Sometimes I stay up too late just thinking about you, and it's <b>too late to sleep</b> because your face won't leave my mind. But I promise you, distance is just a test, and we are going to pass it beautifully.</p>
+<p>Every night I think about you. I lie awake smiling because of you. Distance may keep us apart for now, but it can never reduce what I feel for you. In fact, it makes me love you more every single day.</p>
 
-<p>You are so unique, so rare, so nucleic to my heart — like the center that holds me together. Without you, I am incomplete.</p>
+<p>You are beautiful inside and out. Your smile heals me, your voice calms me, your love keeps me going. I am so lucky to call you mine.</p>
 
-<p>And my baby, I need you to know this from the bottom of my heart...</p>
+<p>My love, I promise you this:</p>
 
-<p style="text-align:center; font-weight:700; font-size:16px; color:#8e44ad; background:rgba(142,68,173,0.1); padding:12px; border-radius:14px;">When we finally meet, I'm going to hold you so tight, look into your eyes, and never let you go. I have waited for that moment my whole life.</p>
+<p style="text-align:center; font-weight:800; font-size:16px; color:#8e44ad; background:rgba(142,68,173,0.12); padding:14px; border-radius:14px;">When we finally meet, I'm going to hold you so tight in my arms, look deep into your beautiful eyes, and never let you go. I have been waiting for that moment all my life.</p>
 
-<p>You are my today, my tomorrow, my forever. Thank you for existing, thank you for loving me, thank you for being patient with me.</p>
+<p>I love you. I love you today, I will love you tomorrow, and I will love you in every lifetime after this. You are my today and all my tomorrows.</p>
 
-<p>And from my soul to yours — <b>thank you for loving Admin Denzel.</b> Your love is the greatest gift I have ever received.</p>
+<p>Forever yours, completely and truly yours.</p>
 
-<p>I love you more than words can ever explain. More than yesterday, but less than I will tomorrow.</p>
+<div class="sign">All my love,<br>Your Man 💍❤️</div>
 
-<div class="sign">Forever yours,<br>Your Denzel 💍❤️</div>
-
-<button class="closeBtn" onclick="closeLetter()">Close & Keep You in My Heart 💜</button>
+<button class="closeBtn" onclick="closeLetter()">Close 💜</button>
 </div>
 </div>
 
